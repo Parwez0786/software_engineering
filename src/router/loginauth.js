@@ -71,7 +71,7 @@ router2.post("/login",  (req, res) => {
   } else {
     var pass = req.body.password;
 
-    var sql = `select   * from student_data where enroll_no="${user}"`;
+    var sql = `select  * from student_data where enroll_no="${user}"`;
 
     con.query(sql, function (err, result) {
       if (err) {
